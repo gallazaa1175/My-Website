@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <style>
+        /* Global Reset & Flat Cream Background */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f3e9;
+            color: #333333;
+            line-height: 1.6;
+            padding: 30px 15px;
+            min-height: 100vh;
+        }
+
+        /* Central White Card Container */
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 35px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Navigation Buttons Header */
+        .nav-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background-color: #ffffff;
+            color: #333333;
+            border: 1px solid #d0d0d0;
+            border-radius: 6px;
+            padding: 6px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+            /* Orange Hover & Active Styles */
+            .btn:hover {
+                background-color: #e67e22;
+                color: #ffffff;
+                border-color: #e67e22;
+            }
+
+            .btn.active {
+                background-color: #e67e22;
+                color: #ffffff;
+                border-color: #e67e22;
+            }
+
+        /* Headings */
+        h1 {
+            font-size: 28px;
+            color: #000000;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #000000;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 20px;
+        }
+
+        /* Content List Layout */
+        ol, ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 25px;
+            font-size: 14px;
+            color: #444444;
+        }
+
+        /* Image Gallery Styling */
+        .image-gallery {
+            margin-top: 10px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+            .image-gallery img {
+                width: 140px;
+                height: 95px;
+                object-fit: cover;
+                border-radius: 8px;
+                border: 1px solid #e0e0e0;
+            }
+
+        /* Action Steps Formatting */
+        .action-steps {
+            display: block;
+            margin-top: 6px;
+            color: #e67e22;
+            font-weight: 600;
+        }
+
+        blockquote {
+            font-style: italic;
+            border-left: 3px solid #e67e22;
+            padding-left: 12px;
+            margin: 10px 0;
+            color: #555555;
+        }
+
+        /* Fixes the video full-screen behind the content card */
+        #bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+        <!-- Video Background Container -->
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="anime.mp4" type="video/mp4">
+        </video>
+
+        <main class="container">
+            <!-- Navigation Buttons -->
+            <nav class="nav-container">
+                <a href="index.html" class="btn">My homepage</a>
+                <a href="hobbies.html" class="btn active">My hobbies</a>
+                <a href="eduction.html" class="btn">Education page</a>
+                <a href="contact me.html" class="btn">Contact me</a>
+            </nav>
+
+            <!-- Page Title -->
+            <h1>My Hobbies</h1>
+
+            <!-- Hobbies List -->
+            <ol>
+                <li>
+                    1. I like listening to music. My favourite music artists are Travis Scott, Juice WRLD, and many more.
+                    <div class="image-gallery">
+                        <img src="music.jpg" alt="Music">
+                    </div>
+                </li>
+
+                <li>
+                    2. Gaming. My favourite games are Roblox, Fortnite, and GTA 5. The game I play most is Roblox!
+                    <div class="image-gallery">
+                        <img src="Roblox.png" alt="Roblox Game">
+                        <img src="fortnite.png" alt="Fortnite Game">
+                        <img src="gta5.png" alt="GTA 5 Game">
+                    </div>
+                </li>
+
+                <li>
+                    3. I like pets and my favourite pets are cats.
+                    <div class="image-gallery">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=300" alt="Cute Cat">
+                        <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=300" alt="Playful Cat">
+                    </div>
+                </li>
+
+                <li>
+                    4. I like exercising so that my body feels strong and healthy.
+                    <div class="image-gallery">
+                        <img src="gym.jpg" alt="Gym">
+                    </div>
+                </li>
+            </ol>
+
+            <!-- Self Improvement Section -->
+            <h2>Self-Improvement</h2>
+            <p>Check out the following 6 tips to a happier you!</p><br>
+
+            <ul>
+                <li>
+                    <strong>Exercising Regularly:</strong> Everyone knows exercise is a cornerstone of health and fitness — but did you know that even just a few minutes of daily exercise can dramatically boost your ability to be happier?
+                    <span class="action-steps">Action Steps: Aim to have a combination of aerobic, stretching, and jogging exercises for 30–60 minutes every day.</span>
+                </li>
+
+                <li>
+                    <strong>Expressing Gratitude:</strong> Multiple peer-reviewed studies have shown that frequently expressing gratitude increases happiness and fulfillment, reduces stress and depression, and even relieves symptoms of illness.
+                    <span class="action-steps">Action Steps: Keep a gratitude journal and write down at least one thing you're grateful for at the start of each day.</span>
+                </li>
+
+                <li>
+                    <strong>Getting Enough Sleep:</strong> Multiple studies show that your quality of sleep directly affects your quality of life. A lack of sleep wreaks havoc on your brain, including mood control and brain health.
+                    <span class="action-steps">Action Steps: Allow yourself to have at least 7 hours of quality sleep each night.</span>
+                </li>
+
+                <li>
+                    <strong>Focusing On Relationships:</strong>
+                    <blockquote>"We are happy when we have family, we are happy when we have friends and almost all the other things we think make us happy are actually just ways of getting more family and friends."</blockquote>
+                    Remember — not staying in touch with loved ones is one of the biggest regrets reported later in life.
+                    <span class="action-steps">Action Steps: Remember to stay in touch with your family and friends regularly!</span>
+                </li>
+
+                <li>
+                    <strong>Meditation:</strong> Meditation helps cultivate a calmer, more positive, and happier mindset throughout your entire day.
+                    <span class="action-steps">Action Steps: Start meditating for 5 minutes a day, either in the morning or before bed.</span>
+                </li>
+
+                <li>
+                    <strong>Eat Sensibly:</strong> Reduce portions, eat slowly, choose healthy snacks (avoid high-fat or high-sugar items like cookies, chips, and sodas), reduce fat intake, and drink plenty of water.
+                </li>
+            </ul>
+        </main>
+
+    </body>
+</html>

@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        /* Global Reset & Flat Cream Background */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f3e9;
+            color: #333333;
+            line-height: 1.6;
+            padding: 30px 15px;
+            min-height: 100vh;
+        }
+
+        /* Central White Card Container */
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 35px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Navigation Buttons Header */
+        .nav-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background-color: #ffffff;
+            color: #333333;
+            border: 1px solid #d0d0d0;
+            border-radius: 6px;
+            padding: 6px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+            /* Orange Hover & Active Styles */
+            .btn:hover {
+                background-color: #e67e22;
+                color: #ffffff;
+                border-color: #e67e22;
+            }
+
+            .btn.active {
+                background-color: #e67e22;
+                color: #ffffff;
+                border-color: #e67e22;
+            }
+
+        /* Main Page Heading */
+        h1 {
+            font-size: 28px;
+            color: #000000;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .intro-text {
+            font-size: 14px;
+            color: #444444;
+            margin-bottom: 25px;
+        }
+
+        /* Contact Details Section */
+        .contact-info {
+            background-color: #fafafa;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+            .contact-info h2 {
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #000000;
+            }
+
+        .email-link {
+            color: #e67e22;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+            .email-link:hover {
+                text-decoration: underline;
+            }
+
+        /* Contact Form Layout */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+            .form-group label {
+                font-size: 13px;
+                font-weight: 600;
+                color: #333333;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                padding: 10px;
+                border: 1px solid #d0d0d0;
+                border-radius: 6px;
+                font-family: inherit;
+                font-size: 14px;
+                outline: none;
+                transition: border-color 0.2s ease;
+            }
+
+                .form-group input:focus,
+                .form-group textarea:focus {
+                    border-color: #e67e22;
+                }
+
+        .submit-btn {
+            background-color: #e67e22;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            align-self: flex-start;
+            transition: background-color 0.2s ease;
+        }
+
+            .submit-btn:hover {
+                background-color: #d35400;
+            }
+
+        /* Fixes the video full-screen behind the content card */
+        #bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+        <!-- Video Background Container -->
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="anime.mp4" type="video/mp4">
+        </video>
+
+        <main class="container">
+            <!-- Navigation Buttons -->
+            <nav class="nav-container">
+                <a href="index.html" class="btn">My homepage</a>
+                <a href="hobbies.html" class="btn">My hobbies</a>
+                <a href="eduction.html" class="btn">Education page</a>
+                <a href="contact me.html" class="btn active">Contact me</a>
+            </nav>
+
+            <!-- Page Title -->
+            <h1>Contact Me</h1>
+
+            <p class="intro-text">If you would like to get in touch, feel free to send me an email or use the form below.</p>
+
+            <!-- Email Info Box -->
+            <div class="contact-info">
+                <h2>Direct Email</h2>
+                <p>You can email me directly at: <a href="mailto:gallazaa1175@student.sfx.ac.uk" class="email-link">gallazaa1175@student.sfx.ac.uk</a></p>
+            </div>
+
+            <!-- Form Section -->
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </main>
+
+    </body>
+</html

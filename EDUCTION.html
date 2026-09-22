@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Education</title>
+    <style>
+        /* Global Reset & Flat Cream Background */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f3e9;
+            color: #333333;
+            line-height: 1.6;
+            padding: 30px 15px;
+            min-height: 100vh;
+        }
+
+        /* Central White Card Container */
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 35px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Navigation Buttons Header */
+        .nav-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background-color: #ffffff;
+            color: #333333;
+            border: 1px solid #d0d0d0;
+            border-radius: 6px;
+            padding: 6px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+            /* Orange Hover & Active Styles */
+            .btn:hover {
+                background-color: #e67e22;
+                color: #ffffff;
+                border-color: #e67e22;
+            }
+
+            .btn.active {
+                background-color: #e67e22;
+                color: #ffffff;
+                border-color: #e67e22;
+            }
+
+        /* Main Page Heading */
+        h1 {
+            font-size: 28px;
+            color: #000000;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        /* Content List Layout */
+        ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 25px;
+            font-size: 14px;
+            color: #444444;
+        }
+
+            li p {
+                margin-bottom: 6px;
+            }
+
+        /* Image Gallery Styling */
+        .image-gallery {
+            margin-top: 10px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+            .image-gallery img {
+                width: 140px;
+                height: 95px;
+                object-fit: cover;
+                border-radius: 8px;
+                border: 1px solid #e0e0e0;
+            }
+
+        /* Fixes the video full-screen behind the content card */
+        #bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+        <!-- Video Background Container -->
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="anime.mp4" type="video/mp4">
+        </video>
+
+
+        <main class="container">
+            <!-- Navigation Buttons -->
+            <nav class="nav-container">
+                <a href="index.html" class="btn">My homepage</a>
+                <a href="hobbies.html" class="btn">My hobbies</a>
+                <a href="eduction.html" class="btn active">Education page</a>
+                <a href="contact me.html" class="btn">Contact me</a>
+            </nav>
+
+            <!-- Page Title -->
+            <h1>My Education</h1>
+
+            <!-- Content List -->
+            <ol>
+                <li>
+                    <p>My education journey begins in Primary School. The Primary School I went to is St Thomas Of Canterbury.</p>
+                    <div class="image-gallery">
+                        <img src="https://www.stthomasrc.lbhf.sch.uk/i/design/St-Thomas-of-Canterbury-Catholic-Primary-School.png" alt="St Thomas of Canterbury Primary School">
+                    </div>
+                </li>
+
+                <li>
+                    <p>After Primary School, I went to secondary school called Bishop Thomas Grant Secondary School (BTG), located in Streatham.</p>
+                    <p>I liked this school because the staff helped me get good grades and supported me during exam seasons throughout Year 7 to Year 11.</p>
+                    <p>In Year 9, I chose my options for Years 10 and 11: Art, ICT, and Geography.</p>
+                    <div class="image-gallery">
+                        <img src="btg.jpg" alt="Bishop Thomas Grant Secondary School">
+                    </div>
+                </li>
+
+                <li>
+                    <p>In May and June, I completed my GCSEs at Bishop Thomas Grant School. On August 20, 2026, I got my GCSE results and I am proud of my results.</p>
+                </li>
+
+                <li>
+                    <p>Currently, I am studying at Saint Francis Xavier (SFX) as a Year 12 student.</p>
+                    <p>The course I chose at SFX is the IT Extended Diploma.</p>
+                    <div class="image-gallery">
+                        <img src="sfx.png" alt="Saint Francis Xavier College">
+                    </div>
+                </li>
+            </ol>
+        </main>
+
+    </body>
+</html>
